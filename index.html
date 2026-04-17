@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolve Energy Group — Energizing the Future with Solar Innovation</title>
+
+  <!-- ============ GOOGLE FONTS ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ============ MAIN STYLESHEET ============ -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR (desktop only, hidden on touch devices via CSS) ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-content">
+    <img src="https://evolveenergygroup.com/wp-content/uploads/2024/10/Evolve_Energy-Group_Logo_White-1-min-2.png" alt="Evolve Energy Group Logo" class="preloader-logo">
+    <div class="preloader-text">Energizing the Future</div>
+    <div class="preloader-bar"><span></span></div>
+    <div class="preloader-percent" id="preloaderPercent">0%</div>
+  </div>
+</div>
+
+<!-- ============ SIDE MARKERS (decorative text, desktop only) ============ -->
+<div class="side-mark side-mark--l">Evolve Energy Group — Solar Innovation</div>
+<div class="side-mark side-mark--r">Energizing the Future with Solar Innovation</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="nav nav--top" id="nav">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a href="https://evolveenergygroup.com/" class="nav-logo">
+      <img src="https://evolveenergygroup.com/wp-content/uploads/2024/10/Evolve_Energy-Group_Logo_White-1-min-2.png" alt="Evolve Energy Group">
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="https://evolveenergygroup.com/">Home</a></li>
+      <li><a href="https://evolveenergygroup.com/about-us/">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://evolveenergygroup.com/solar-calculator/">Solar Calculator</a></li>
+      <li><a href="https://evolveenergygroup.com/be-our-partner/">Be Our Partner</a></li>
+      <li><a href="https://evolveenergygroup.com/contact/" class="nav-cta magnetic-btn">Get a Quote</a></li>
+    </ul>
+
+    <!-- Hamburger Menu Button (mobile only) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ MOBILE NAV OVERLAY ============ -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" id="mobCloseBtn" aria-label="Close menu">&#10005;</button>
+  <a href="https://evolveenergygroup.com/">Home</a>
+  <a href="https://evolveenergygroup.com/about-us/">About Us</a>
+  <a href="https://evolveenergygroup.com/solar-inverter/">Solar Inverter</a>
+  <a href="https://evolveenergygroup.com/solar-modules/">Solar Modules</a>
+  <a href="https://evolveenergygroup.com/solar-bos/">Solar BOS</a>
+  <a href="https://evolveenergygroup.com/services/epc/">EPC</a>
+  <a href="https://evolveenergygroup.com/services/manufacturing/">Manufacturing</a>
+  <a href="https://evolveenergygroup.com/services/operation-maintenance/">O&amp;M</a>
+  <a href="https://evolveenergygroup.com/solar-calculator/">Solar Calculator</a>
+  <a href="https://evolveenergygroup.com/be-our-partner/">Be Our Partner</a>
+  <a href="https://evolveenergygroup.com/contact/">Contact</a>
+</div>
+
+
+<!-- ============================================================
+     HERO SECTION — Video Background + Corner Labels + 4 Service Cards
+     ============================================================ -->
+<section class="hero">
+  <!-- Video Background -->
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline poster="https://evolveenergygroup.com/wp-content/uploads/2025/02/Evolve2.jpg">
+      <source src="https://assets.mixkit.co/videos/46623/46623-360.mp4" type="video/mp4">
+      <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/Evolve2.jpg" alt="Evolve Energy Solar">
+    </video>
+  </div>
+
+  <!-- Grid Overlay -->
+  <div class="hero-grid"></div>
+
+  <!-- Floating Particles (decorative, hidden on mobile) -->
+  <div class="hero-particles">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Corner Service Labels (desktop only) -->
+  <div class="hero-corner hc-tl">Solar<br>Park</div>
+  <div class="hero-corner hc-tr">Commercial<br>Spaces</div>
+  <div class="hero-corner hc-bl">Residential<br>Area</div>
+  <div class="hero-corner hc-br">Factory</div>
+
+  <!-- Hero Center Content -->
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">
+      <span class="pulse"></span> Energizing the Future with Solar Innovation
+    </div>
+    <h1 class="reveal d1">Energizing the Future<br>with <em>Solar Innovation</em></h1>
+    <p class="hero-sub reveal d2">India's trusted solar energy partner delivering end-to-end solutions for homes, businesses, and industries.</p>
+    <div class="hero-btns reveal d3">
+      <a href="https://evolveenergygroup.com/contact/" class="btn btn-fill magnetic-btn">
+        Get Free Consultation
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+918001612345" class="btn btn-ghost magnetic-btn">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +91 800 16 12345
+      </a>
+    </div>
+  </div>
+
+  <!-- 4 Hero Service Cards -->
+  <div class="hero-services">
+    <div class="hero-srv tilt-card reveal d2">
+      <div class="hero-srv-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+      <h3>EPC Solutions</h3>
+      <p>End-to-end turnkey solar projects</p>
+    </div>
+    <div class="hero-srv tilt-card reveal d3">
+      <div class="hero-srv-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 2h8l4 4v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6l4-4z"/></svg></div>
+      <h3>Manufacturing</h3>
+      <p>Panels, inverters &amp; components</p>
+    </div>
+    <div class="hero-srv tilt-card reveal d4">
+      <div class="hero-srv-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.573-1.066z"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <h3>O&amp;M Services</h3>
+      <p>Preventive &amp; corrective maintenance</p>
+    </div>
+    <div class="hero-srv tilt-card reveal d5">
+      <div class="hero-srv-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div>
+      <h3>Residential Solar</h3>
+      <p>Rooftop solutions for homes</p>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+</section>
+
+
+<!-- ============ STATS STRIP ============ -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-box">
+      <div class="stat-num" data-count="1.5" data-suffix=" GW">1.5 GW</div>
+      <div class="stat-label">Inverter &amp; Modules</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" data-count="200" data-suffix="+">200+</div>
+      <div class="stat-label">MW Installed</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" data-count="2.93" data-suffix="L">2.93L</div>
+      <div class="stat-label">Tonnes CO&#8322; Reduced</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" data-count="1000" data-suffix="+">1000+</div>
+      <div class="stat-label">Happy Customers</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" data-count="2" data-suffix="+ MW">2+ MW</div>
+      <div class="stat-label">Residential Solar</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============ ABOUT SECTION — Floating Cards + Sun Logo ============ -->
+<section class="about-section">
+  <div class="about-inner">
+
+    <!-- Left Side: Floating Cards Around Sun Logo -->
+    <div class="about-float">
+      <div class="about-orbit"></div>
+      <div class="about-orbit-2"></div>
+
+      <!-- Center Sun Logo -->
+      <div class="about-logo-center">
+        <img src="https://evolveenergygroup.com/wp-content/uploads/2024/10/Evolve_Energy-Group_Logo_White-1-min-2.png" alt="Evolve Energy">
+      </div>
+
+      <!-- Floating Card 1: Solar EPC -->
+      <div class="about-fcard afc-1 tilt-card">
+        <div class="about-fcard-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/7583/7583491.png?semt=ais_white_label" alt="Solar EPC">
+        </div>
+        <h4>Solar EPC</h4>
+        <p>Full turnkey project delivery</p>
+      </div>
+
+      <!-- FIX: Floating Card 2: Manufacturing — removed broken orphaned SVG elements -->
+      <div class="about-fcard afc-2 tilt-card">
+        <div class="about-fcard-icon">
+          <img src="https://cdn-icons-png.freepik.com/128/1281/1281749.png" alt="Manufacturing">
+        </div>
+        <h4>Manufacturing</h4>
+        <p>Modules, inverters &amp; BOS</p>
+      </div>
+
+      <!-- Floating Card 3: O&M Services -->
+      <div class="about-fcard afc-3 tilt-card">
+        <div class="about-fcard-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/4114/4114987.png?ga=GA1.1.2140543882.1776145532&semt=ais_white_label" alt="O&amp;M Services">
+        </div>
+        <h4>O&amp;M Services</h4>
+        <p>Lifetime performance care</p>
+      </div>
+
+      <!-- Floating Card 4: Residential Solar -->
+      <div class="about-fcard afc-4 tilt-card">
+        <div class="about-fcard-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/16912/16912515.png?ga=GA1.1.2140543882.1776145532&semt=ais_white_label" alt="Residential Solar">
+        </div>
+        <h4>Residential Solar</h4>
+        <p>Rooftop for every home</p>
+      </div>
+    </div>
+
+    <!-- Right Side: About Text Content -->
+    <div class="about-right-content">
+      <div class="section-eyebrow reveal">From Rooftops to Mega Projects</div>
+      <h2 class="section-title reveal d1">We're Evolve <strong>Energy Group</strong></h2>
+      <p class="about-text reveal d2">
+        Evolve Energy Group is the best solar company in India, providing innovative and cost-effective solar solutions.
+        We bring cutting-edge technology and decades of expertise to deliver sustainable energy systems that power a greener tomorrow.
+      </p>
+
+      <div class="about-highlights reveal d3">
+        <div class="about-hl">
+          <svg fill="none" stroke="var(--blue)" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          <span>ISO 9001:2015 Certified</span>
+        </div>
+        <div class="about-hl">
+          <svg fill="none" stroke="var(--blue)" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          <span>MNRE Approved Channel Partner</span>
+        </div>
+        <div class="about-hl">
+          <svg fill="none" stroke="var(--blue)" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          <span>Pan India Service Network</span>
+        </div>
+      </div>
+
+      <div class="about-btn reveal d4">
+        <a href="https://evolveenergygroup.com/about-us/" class="btn btn-dark magnetic-btn">
+          Discover More →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ CITY SELECTOR SECTION ============ -->
+<!-- FIX: Removed duplicate DOCTYPE/html/head/body tags. Merged into main page properly. -->
+<section class="city-wrapper">
+
+  <!-- City Search Bar -->
+  <div class="city-search">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search for your city">
+  </div>
+
+  <!-- Detect Location -->
+  <div class="detect-location">
+    <span>📍</span> Detect my location
+  </div>
+
+  <hr>
+
+  <!-- Popular Cities Title -->
+  <!-- FIX: Changed class to city-section-title to avoid conflict with main .section-title -->
+  <h3 class="city-section-title">Popular Cities</h3>
+
+  <!-- City Grid -->
+  <div class="city-grid" id="cityContainer">
+    <div class="city-card" data-city="mumbai">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="Mumbai">
+      <p>Mumbai</p>
+    </div>
+    <div class="city-card" data-city="delhi">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt="Delhi NCR">
+      <p>Delhi-NCR</p>
+    </div>
+    <div class="city-card" data-city="bengaluru">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/bang.png" alt="Bengaluru">
+      <p>Bengaluru</p>
+    </div>
+    <div class="city-card" data-city="hyderabad">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt="Hyderabad">
+      <p>Hyderabad</p>
+    </div>
+    <div class="city-card" data-city="chandigarh">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt="Chandigarh">
+      <p>Chandigarh</p>
+    </div>
+    <div class="city-card" data-city="ahmedabad">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/ahd.png" alt="Ahmedabad">
+      <p>Ahmedabad</p>
+    </div>
+    <div class="city-card" data-city="pune">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/pune.png" alt="Pune">
+      <p>Pune</p>
+    </div>
+    <div class="city-card" data-city="chennai">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/chen.png" alt="Chennai">
+      <p>Chennai</p>
+    </div>
+    <div class="city-card" data-city="kolkata">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/kolk.png" alt="Kolkata">
+      <p>Kolkata</p>
+    </div>
+    <div class="city-card" data-city="kochi">
+      <img src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/koch.png" alt="Kochi">
+      <p>Kochi</p>
+    </div>
+  </div>
+
+  <!-- View All Cities Link -->
+  <div class="view-all">View All Cities</div>
+</section>
+
+
+<!-- ============ PRODUCTS SECTION — Light Theme Product Cards ============ -->
+<section class="products" id="products">
+  <div class="products-inner">
+    <div class="products-header reveal">
+      <div class="section-eyebrow">Clean Energy Solutions</div>
+      <h2 class="section-title">High-Quality Solar <strong>Products</strong></h2>
+      <p class="section-sub">Designed for performance, built for durability, and trusted for long-term efficiency.</p>
+    </div>
+    <div class="prod-grid">
+      <!-- Product Card 1: Solar Inverter -->
+      <a href="https://evolveenergygroup.com/solar-inverter/" class="prod-card tilt-card reveal">
+        <div class="prod-card-badge">Bestseller</div>
+        <div class="prod-card-img">
+          <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/Yellow-Smart-Watch-Promotion-Modern-Instagram-Post-45.png" alt="Solar Inverter">
+        </div>
+        <div class="prod-card-body">
+          <h3>Solar Inverter</h3>
+          <p>Advanced inverter systems engineered for maximum energy efficiency.</p>
+          <span class="prod-card-link">Explore <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <!-- Product Card 2: Solar Modules -->
+      <a href="https://evolveenergygroup.com/solar-modules/" class="prod-card tilt-card reveal d1">
+        <div class="prod-card-badge">Popular</div>
+        <div class="prod-card-img">
+          <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/yellow-smart-watch-promotion-modern-instagram-post-44-67bef52418c6c.webp" alt="Solar Modules">
+        </div>
+        <div class="prod-card-body">
+          <h3>Solar Modules</h3>
+          <p>High-performance modules delivering maximum output in all conditions.</p>
+          <span class="prod-card-link">Explore <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <!-- Product Card 3: Solar BOS -->
+      <a href="https://evolveenergygroup.com/solar-bos/" class="prod-card tilt-card reveal d2">
+        <div class="prod-card-badge">Complete Kit</div>
+        <div class="prod-card-img">
+          <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/yellow-smart-watch-promotion-modern-instagram-post-43-67bef4c78969f.webp" alt="Solar BOS">
+        </div>
+        <div class="prod-card-body">
+          <h3>Solar BOS</h3>
+          <p>Complete system solutions including mounting, wiring, and storage.</p>
+          <span class="prod-card-link">Explore <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ SERVICES SECTION — India Map + Service Cards ============ -->
+<section class="services-map" id="services">
+  <div class="services-bg-image" style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1920&q=80')"></div>
+  <div class="services-map-inner">
+    <div class="services-map-header">
+      <div class="section-eyebrow reveal">Our Services Across India</div>
+      <h2 class="section-title reveal d1">Solar Services <strong>Pan India</strong></h2>
+      <p class="section-sub reveal d2">Comprehensive solar solutions delivered across every corner of India.</p>
+    </div>
+    <div class="services-map-layout">
+
+      <!-- India Map SVG Illustration -->
+      <div class="india-map-wrap reveal">
+        <svg viewBox="0 0 500 600" class="india-map-svg" xmlns="http://www.w3.org/2000/svg">
+          <!-- India outline (simplified) -->
+          <path class="india-outline" d="M220 40 L260 30 L300 35 L340 25 L360 40 L380 35 L400 50 L390 70 L410 85 L400 100 L420 110 L410 130 L430 145 L420 165 L405 175 L415 190 L400 210 L410 230 L395 250 L405 270 L390 290 L380 310 L370 330 L355 350 L340 370 L325 390 L310 405 L295 420 L280 440 L265 455 L250 470 L240 490 L235 510 L245 530 L255 545 L240 555 L220 545 L210 525 L200 510 L195 490 L185 470 L175 450 L160 435 L145 420 L130 400 L120 380 L110 360 L105 340 L100 320 L95 300 L100 280 L110 260 L115 240 L120 220 L130 200 L140 180 L150 160 L155 140 L160 120 L170 100 L180 80 L195 60 L210 45 Z"/>
+          <!-- Glow outline -->
+          <path class="india-glow" d="M220 40 L260 30 L300 35 L340 25 L360 40 L380 35 L400 50 L390 70 L410 85 L400 100 L420 110 L410 130 L430 145 L420 165 L405 175 L415 190 L400 210 L410 230 L395 250 L405 270 L390 290 L380 310 L370 330 L355 350 L340 370 L325 390 L310 405 L295 420 L280 440 L265 455 L250 470 L240 490 L235 510 L245 530 L255 545 L240 555 L220 545 L210 525 L200 510 L195 490 L185 470 L175 450 L160 435 L145 420 L130 400 L120 380 L110 360 L105 340 L100 320 L95 300 L100 280 L110 260 L115 240 L120 220 L130 200 L140 180 L150 160 L155 140 L160 120 L170 100 L180 80 L195 60 L210 45 Z"/>
+          <!-- City Dots with Pulse Animations -->
+          <g class="map-cities">
+            <!-- Chennai (HQ) -->
+            <circle cx="310" cy="430" r="8" class="city-dot city-hq"/>
+            <circle cx="310" cy="430" r="8" class="city-pulse"/>
+            <text x="310" y="455" class="city-label">Chennai</text>
+            <!-- Mumbai -->
+            <circle cx="155" cy="320" r="6" class="city-dot"/>
+            <circle cx="155" cy="320" r="6" class="city-pulse p2"/>
+            <text x="155" y="345" class="city-label">Mumbai</text>
+            <!-- Delhi -->
+            <circle cx="230" cy="130" r="6" class="city-dot"/>
+            <circle cx="230" cy="130" r="6" class="city-pulse p3"/>
+            <text x="230" y="120" class="city-label">Delhi</text>
+            <!-- Bangalore -->
+            <circle cx="270" cy="420" r="6" class="city-dot"/>
+            <circle cx="270" cy="420" r="6" class="city-pulse p4"/>
+            <text x="248" y="412" class="city-label">Bangalore</text>
+            <!-- Hyderabad -->
+            <circle cx="280" cy="350" r="6" class="city-dot"/>
+            <circle cx="280" cy="350" r="6" class="city-pulse p5"/>
+            <text x="295" y="348" class="city-label">Hyderabad</text>
+            <!-- Kolkata -->
+            <circle cx="370" cy="250" r="6" class="city-dot"/>
+            <circle cx="370" cy="250" r="6" class="city-pulse p6"/>
+            <text x="380" y="248" class="city-label">Kolkata</text>
+            <!-- Pune -->
+            <circle cx="175" cy="340" r="5" class="city-dot"/>
+            <circle cx="175" cy="340" r="5" class="city-pulse p7"/>
+            <text x="145" y="358" class="city-label">Pune</text>
+            <!-- Coimbatore -->
+            <circle cx="265" cy="450" r="5" class="city-dot"/>
+            <circle cx="265" cy="450" r="5" class="city-pulse p8"/>
+            <text x="230" y="465" class="city-label">Coimbatore</text>
+            <!-- Mysore -->
+            <circle cx="250" cy="440" r="5" class="city-dot"/>
+            <text x="215" y="445" class="city-label">Mysore</text>
+          </g>
+          <!-- Connection Lines from HQ -->
+          <g class="map-connections" opacity="0.15">
+            <line x1="310" y1="430" x2="155" y2="320" stroke="#42A5F5" stroke-width="1"/>
+            <line x1="310" y1="430" x2="230" y2="130" stroke="#42A5F5" stroke-width="1"/>
+            <line x1="310" y1="430" x2="280" y2="350" stroke="#42A5F5" stroke-width="1"/>
+            <line x1="310" y1="430" x2="370" y2="250" stroke="#42A5F5" stroke-width="1"/>
+            <line x1="310" y1="430" x2="270" y2="420" stroke="#42A5F5" stroke-width="1"/>
+          </g>
+        </svg>
+        <!-- Map Legend -->
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot legend-hq"></span> Headquarters</div>
+          <div class="legend-item"><span class="legend-dot"></span> Service Locations</div>
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="services-map-cards">
+        <a href="https://evolveenergygroup.com/services/epc/" class="srv-map-card reveal d1">
+          <div class="srv-map-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="srv-map-info">
+            <h3>EPC Solutions</h3>
+            <p>End-to-end turnkey solar projects from design to commissioning.</p>
+            <span class="srv-map-link">Learn More →</span>
+          </div>
+        </a>
+        <a href="https://evolveenergygroup.com/services/manufacturing/" class="srv-map-card reveal d2">
+          <div class="srv-map-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 2h8l4 4v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6l4-4z"/></svg>
+          </div>
+          <div class="srv-map-info">
+            <h3>Manufacturing</h3>
+            <p>State-of-the-art production of panels, inverters &amp; components.</p>
+            <span class="srv-map-link">Learn More →</span>
+          </div>
+        </a>
+        <a href="https://evolveenergygroup.com/services/operation-maintenance/" class="srv-map-card reveal d3">
+          <div class="srv-map-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.573-1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="srv-map-info">
+            <h3>O&amp;M Services</h3>
+            <p>Preventive &amp; corrective maintenance with real-time monitoring.</p>
+            <span class="srv-map-link">Learn More →</span>
+          </div>
+        </a>
+        <a href="https://evolveenergygroup.com/services/residential/" class="srv-map-card reveal d4">
+          <div class="srv-map-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <div class="srv-map-info">
+            <h3>Residential Solar</h3>
+            <p>Rooftop solutions designed for Indian homes with subsidy support.</p>
+            <span class="srv-map-link">Learn More →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ JOURNEY SECTION — Professional Timeline ============ -->
+<section class="journey-road">
+  <div class="journey-bg-image" style="background-image:url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1920&q=80')"></div>
+  <div class="journey-container">
+    <div class="journey-header">
+      <span class="section-eyebrow reveal">Customer Journey</span>
+      <h2 class="section-title reveal d1">Your Path to <strong>Solar Energy</strong></h2>
+      <p class="section-sub reveal d2">Follow the guided path from consultation to long-term savings.</p>
+    </div>
+    <div class="road-wrapper">
+      <!-- Road SVG Path -->
+      <svg viewBox="0 0 600 1200" class="road">
+        <path class="road-edge" d="M300 0 C100 200, 500 300, 300 500 C100 700, 500 800, 300 1000 C200 1100, 400 1150, 300 1200"/>
+        <path class="road-line" d="M300 0 C100 200, 500 300, 300 500 C100 700, 500 800, 300 1000 C200 1100, 400 1150, 300 1200"/>
+      </svg>
+      <!-- Animated Sun along path -->
+      <div class="sun"></div>
+      <!-- Journey Steps -->
+      <div class="step s1">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">01</div><h3>Free Site Visit</h3><p>Inspection &amp; analysis.</p></div>
+      </div>
+      <div class="step s2">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">02</div><h3>Custom Proposal</h3><p>System design &amp; savings.</p></div>
+      </div>
+      <div class="step s3">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">03</div><h3>Approvals</h3><p>Documentation &amp; subsidy.</p></div>
+      </div>
+      <div class="step s4">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">04</div><h3>Installation</h3><p>Professional setup.</p></div>
+      </div>
+      <div class="step s5">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">05</div><h3>Net Metering</h3><p>Grid integration.</p></div>
+      </div>
+      <div class="step s6">
+        <div class="connector"></div>
+        <div class="card tilt-card"><div class="step-num">06</div><h3>Go Live</h3><p>Start saving instantly.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ WHY CHOOSE US SECTION ============ -->
+<section class="why-evolve" id="why-choose">
+  <div class="why-bg-image" style="background-image:url('https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=1920&q=80')"></div>
+  <!-- Decorative Particles -->
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="why-container">
+    <div class="why-header">
+      <span class="why-eyebrow">Why Choose Evolve</span>
+      <h2>Smart Solar Solutions You Can Trust</h2>
+      <p>We combine cutting-edge technology, transparent pricing, and reliable support to deliver solar solutions that truly perform.</p>
+    </div>
+    <!-- Stats Counters -->
+    <div class="why-stats">
+      <div class="why-stat" data-target="80">
+        <h3><span class="counter">0</span>%</h3>
+        <span>Average Savings</span>
+      </div>
+      <div class="why-stat" data-target="25">
+        <h3><span class="counter">0</span>+</h3>
+        <span>Warranty (Yr)</span>
+      </div>
+      <div class="why-stat" data-target="1000">
+        <h3><span class="counter">0</span>+</h3>
+        <span>Happy Clients</span>
+      </div>
+      <div class="why-stat" data-target="200">
+        <h3><span class="counter">0</span>+</h3>
+        <span>Installed MW</span>
+      </div>
+    </div>
+    <!-- Feature Cards -->
+    <div class="why-grid">
+      <div class="why-card tilt-card reveal">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M5 13l4 4L19 7" stroke="#1E88E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>End-to-End Solutions</h4>
+        <p>From consultation to installation and maintenance, we handle everything.</p>
+      </div>
+      <div class="why-card tilt-card reveal d1">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M12 1v22M1 12h22" stroke="#1E88E5" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Affordable Plans</h4>
+        <p>Flexible EMI options with full government subsidy support.</p>
+      </div>
+      <div class="why-card tilt-card reveal d2">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" stroke="#1E88E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Premium Quality</h4>
+        <p>High-performance panels and inverters with global certifications.</p>
+      </div>
+      <div class="why-card tilt-card reveal d3">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="#1E88E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Reliable Support</h4>
+        <p>Dedicated after-sales team ready whenever you need help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ TESTIMONIALS SECTION ============ -->
+<section class="testimonials">
+  <div class="testimonials-header">
+    <div class="section-eyebrow reveal">What Our Customers Say</div>
+    <h2 class="section-title reveal d1">Customer <strong>Testimonials</strong></h2>
+  </div>
+  <!-- Auto-scrolling Testimonial Track -->
+  <div class="t-track-wrap">
+    <div class="t-track">
+      <!-- Testimonial Cards (originals) -->
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">Evolve Energy Group is a quality Solar Company which has been very helpful in every situation.</div><div class="t-author"><div class="t-avatar">PJ</div><div><div class="t-name">Padmanaban J</div><div class="t-company">PJ Solar</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We rely on dependable service from suppliers like you to help us keep our schedule and satisfy our customers.</div><div class="t-author"><div class="t-avatar">DJ</div><div><div class="t-name">Dinesh Jaglan</div><div class="t-company">Solaris Power</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">There is unlimited support from the team from inquiries to delivery. The Evolve team is always one call away.</div><div class="t-author"><div class="t-avatar">PJ</div><div><div class="t-name">Purvaraj Jhala</div><div class="t-company">Evotar Technologies</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We appreciate your prompt response to our queries, support to quotations and delivery of Inverters.</div><div class="t-author"><div class="t-avatar">NM</div><div><div class="t-name">Nitin Moghe</div><div class="t-company">Solen Consultancy</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">It was a pleasure to work with Evolve Group where they have supported us immensely on shipments.</div><div class="t-author"><div class="t-avatar">AK</div><div><div class="t-name">Akshat</div><div class="t-company">Mahindra &amp; Mahindra</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">Evolve team is very judicious in their work. Dealing with Evolve is always a pleasant experience.</div><div class="t-author"><div class="t-avatar">KS</div><div><div class="t-name">Kishan Lal Sharma</div><div class="t-company">Phototechenergy</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We are very satisfied with the Evolve range of products. Best technical team ready to provide service any time.</div><div class="t-author"><div class="t-avatar">RJ</div><div><div class="t-name">Ranit Jana</div><div class="t-company">RMB Power Projects</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">The price points are very competitive and they deliver on time.</div><div class="t-author"><div class="t-avatar">HM</div><div><div class="t-name">Himanshu</div><div class="t-company">Xtreme Energy Solutions</div></div></div></div>
+      <!-- Duplicate cards for seamless infinite scroll -->
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">Evolve Energy Group is a quality Solar Company which has been very helpful in every situation.</div><div class="t-author"><div class="t-avatar">PJ</div><div><div class="t-name">Padmanaban J</div><div class="t-company">PJ Solar</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We rely on dependable service from suppliers like you to help us keep our schedule and satisfy our customers.</div><div class="t-author"><div class="t-avatar">DJ</div><div><div class="t-name">Dinesh Jaglan</div><div class="t-company">Solaris Power</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">There is unlimited support from the team from inquiries to delivery. The Evolve team is always one call away.</div><div class="t-author"><div class="t-avatar">PJ</div><div><div class="t-name">Purvaraj Jhala</div><div class="t-company">Evotar Technologies</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We appreciate your prompt response to our queries, support to quotations and delivery of Inverters.</div><div class="t-author"><div class="t-avatar">NM</div><div><div class="t-name">Nitin Moghe</div><div class="t-company">Solen Consultancy</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">It was a pleasure to work with Evolve Group where they have supported us immensely on shipments.</div><div class="t-author"><div class="t-avatar">AK</div><div><div class="t-name">Akshat</div><div class="t-company">Mahindra &amp; Mahindra</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">Evolve team is very judicious in their work. Dealing with Evolve is always a pleasant experience.</div><div class="t-author"><div class="t-avatar">KS</div><div><div class="t-name">Kishan Lal Sharma</div><div class="t-company">Phototechenergy</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">We are very satisfied with the Evolve range of products. Best technical team ready to provide service any time.</div><div class="t-author"><div class="t-avatar">RJ</div><div><div class="t-name">Ranit Jana</div><div class="t-company">RMB Power Projects</div></div></div></div>
+      <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="t-quote">The price points are very competitive and they deliver on time.</div><div class="t-author"><div class="t-avatar">HM</div><div><div class="t-name">Himanshu</div><div class="t-company">Xtreme Energy Solutions</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ PROJECTS SECTION ============ -->
+<section class="projects" id="projects">
+  <div class="projects-inner">
+    <div class="projects-header">
+      <div class="section-eyebrow reveal">Real-World Impact</div>
+      <h2 class="section-title reveal d1">Our <strong>Projects</strong></h2>
+      <p class="section-sub reveal d2">Explore our successful solar installations across homes, businesses, and industries.</p>
+    </div>
+    <div class="proj-grid">
+      <a href="https://evolveenergygroup.com/atharva-sai-texbond-mysore-1mw/" class="proj-card reveal">
+        <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/project1.jpeg" alt="Atharva Sai Texbond Mysore 1MW Solar Project">
+        <div class="proj-overlay"><div class="proj-tag">Industrial</div><h3>Atharva Sai Texbond — Mysore 1MW</h3><span class="proj-link">View Project →</span></div>
+      </a>
+      <a href="https://evolveenergygroup.com/thirupathiyarn-1mw/" class="proj-card reveal d1">
+        <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/project2.jpeg" alt="Thirupathiyarn 1MW Solar Project">
+        <div class="proj-overlay"><div class="proj-tag">Commercial</div><h3>Thirupathiyarn — 1MW</h3><span class="proj-link">View Project →</span></div>
+      </a>
+      <a href="https://evolveenergygroup.com/coimbatore-2-8mw/" class="proj-card reveal d2">
+        <img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/project3-1.jpeg" alt="Coimbatore 2.8MW Solar Project">
+        <div class="proj-overlay"><div class="proj-tag">Mega Project</div><h3>Coimbatore — 2.8MW</h3><span class="proj-link">View Project →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FAQ SECTION ============ -->
+<section class="faq">
+  <div class="faq-inner">
+    <!-- FAQ Sidebar with Tabs -->
+    <div class="faq-side">
+      <div class="section-eyebrow reveal">Everything You Need to Know</div>
+      <h2 class="section-title reveal d1">Frequently Asked <strong>Questions</strong></h2>
+      <div class="faq-tabs reveal d2">
+        <div class="faq-tab active" data-tab="0">Who We Are?</div>
+        <div class="faq-tab" data-tab="1">What We Do?</div>
+        <div class="faq-tab" data-tab="2">Why Evolve?</div>
+      </div>
+    </div>
+
+    <!-- FAQ Accordion Lists -->
+    <div class="faq-list">
+      <!-- Tab 0: Who We Are -->
+      <div class="faq-group active" data-t="0">
+        <div class="faq-item open">
+          <div class="faq-q"><h3>Why is Evolve Energy Group considered the best solar panels company in India?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>Evolve Energy Group is renowned for its innovative solar solutions, high-quality products, and exceptional customer service. We offer customized solar energy systems that maximize energy efficiency for diverse clients.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h3>What makes Evolve Energy Group the best solar panels company?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>Our solar panels are sourced from top global manufacturers and are designed for durability and high performance in diverse weather conditions.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h3>How long does it take to install a rooftop solar power plant?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>Typically, small residential systems take 1-2 weeks, while larger commercial systems may take up to 4-6 weeks.</p></div>
+        </div>
+      </div>
+      <!-- Tab 1: What We Do -->
+      <div class="faq-group" data-t="1">
+        <div class="faq-item open">
+          <div class="faq-q"><h3>What types of solar energy systems does Evolve offer?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>We provide grid-tied, off-grid, and hybrid systems for residential rooftops and large-scale solar power plants.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h3>How much can I save on electricity bills?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>You can expect to save 50-90% on electricity bills, depending on system size and your consumption.</p></div>
+        </div>
+      </div>
+      <!-- Tab 2: Why Evolve -->
+      <div class="faq-group" data-t="2">
+        <div class="faq-item open">
+          <div class="faq-q"><h3>Does Evolve offer financing options?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>Yes, we offer flexible financing including solar loans and EMI plans to fit every budget.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h3>How long is the warranty?</h3><div class="faq-toggle">+</div></div>
+          <div class="faq-a"><p>8-year inverter warranty, 15-year panel product warranty, and 30-year linear performance warranty.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ CTA BANNER SECTION ============ -->
+<section class="cta-banner">
+  <div class="cta-bg-image" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80')"></div>
+  <div class="cta-banner-inner">
+    <h2 class="reveal">Ready to Go Solar?</h2>
+    <p class="reveal d1">Join 1000+ happy customers saving up to 80% on electricity bills. Get your free consultation today.</p>
+    <div class="cta-banner-btns reveal d2">
+      <a href="https://evolveenergygroup.com/contact/" class="btn btn-fill magnetic-btn">Get Free Quote →</a>
+      <a href="https://evolveenergygroup.com/solar-calculator/" class="btn btn-ghost magnetic-btn">Solar Calculator</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ CLIENTS SECTION — Logo Carousel ============ -->
+<section class="clients">
+  <div class="clients-header">
+    <div class="section-eyebrow reveal">Trusted by Businesses Worldwide</div>
+    <h2 class="section-title reveal d1">Our <strong>Clients</strong></h2>
+  </div>
+  <!-- Auto-scrolling Client Logos -->
+  <div class="cl-track">
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/1.jpg" alt="Client Partner 1"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/3.jpg" alt="Client Partner 2"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/6.jpg" alt="Client Partner 3"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/4.jpg" alt="Client Partner 4"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/5.jpg" alt="Client Partner 5"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/10.jpg" alt="Client Partner 6"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/9.jpg" alt="Client Partner 7"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/8.jpg" alt="Client Partner 8"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/7.jpg" alt="Client Partner 9"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/12.jpg" alt="Client Partner 10"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/larsen-toubro-share-price-live-updates-03-may-2024.jpg" alt="Larsen &amp; Toubro"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/anchor-electricals-logo-freelogo-1-1.png" alt="Anchor Electricals"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/13.jpg" alt="Client Partner 11"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/15.jpg" alt="Client Partner 12"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/16.jpg" alt="Client Partner 13"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/14.jpg" alt="Client Partner 14"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/17.jpg" alt="Client Partner 15"></div>
+    <!-- Duplicate logos for seamless infinite scroll -->
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/1.jpg" alt="Client Partner 1"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/3.jpg" alt="Client Partner 2"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/6.jpg" alt="Client Partner 3"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/4.jpg" alt="Client Partner 4"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/5.jpg" alt="Client Partner 5"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/10.jpg" alt="Client Partner 6"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/9.jpg" alt="Client Partner 7"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/8.jpg" alt="Client Partner 8"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/7.jpg" alt="Client Partner 9"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/12.jpg" alt="Client Partner 10"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/larsen-toubro-share-price-live-updates-03-may-2024.jpg" alt="Larsen &amp; Toubro"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/anchor-electricals-logo-freelogo-1-1.png" alt="Anchor Electricals"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/13.jpg" alt="Client Partner 11"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/15.jpg" alt="Client Partner 12"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/16.jpg" alt="Client Partner 13"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/14.jpg" alt="Client Partner 14"></div>
+    <div class="cl-item"><img src="https://evolveenergygroup.com/wp-content/uploads/2025/02/17.jpg" alt="Client Partner 15"></div>
+  </div>
+</section>
+
+
+<!-- ============ BLOGS SECTION ============ -->
+<section class="blogs">
+  <div class="blogs-inner">
+    <div class="blogs-header">
+      <div class="section-eyebrow reveal">Latest Insights</div>
+      <h2 class="section-title reveal d1">Latest Solar <strong>Blogs</strong></h2>
+      <p class="section-sub reveal d2">News, updates, and expert insights from the solar industry.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="https://evolveenergygroup.com/do-solar-panels-lose-efficiency-due-to-dust-reality-explained/" class="blog-card reveal">
+        <div class="blog-card-img"><img src="https://evolveenergygroup.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-2-2026-04_33_24-PM.png" alt="Solar Panels and Dust Efficiency"></div>
+        <div class="blog-body"><div class="blog-date">Apr 02, 2026</div><h3>Do Solar Panels Lose Efficiency Due to Dust?</h3><p>Many people hesitate to install solar panels because they believe dust can reduce performance significantly.</p><span class="blog-read">Read More <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="12" height="12"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+      </a>
+      <a href="https://evolveenergygroup.com/manual-vs-robotic-cleaning-with-smart-monitoring-in-solar-om/" class="blog-card reveal d1">
+        <div class="blog-card-img"><img src="https://evolveenergygroup.com/wp-content/uploads/2026/03/ChatGPT-Image-Mar-30-2026-05_13_50-PM.png" alt="Manual vs Robotic Solar Cleaning"></div>
+        <div class="blog-body"><div class="blog-date">Mar 30, 2026</div><h3>Manual vs Robotic Cleaning in Solar O&amp;M</h3><p>Solar plants lose efficiency when dust covers panels. Regular cleaning and smart tracking play a key role.</p><span class="blog-read">Read More <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="12" height="12"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+      </a>
+      <a href="https://evolveenergygroup.com/government-subsidy-for-solar-in-india-guide/" class="blog-card reveal d2">
+        <div class="blog-card-img"><img src="https://evolveenergygroup.com/wp-content/uploads/2026/03/ChatGPT-Image-Mar-28-2026-11_16_53-AM.png" alt="Solar Subsidy Guide India 2026"></div>
+        <div class="blog-body"><div class="blog-date">Mar 28, 2026</div><h3>Complete Guide to Solar Subsidy in India (2026)</h3><p>Solar energy adoption in India is driven by supportive government policies and financial incentives.</p><span class="blog-read">Read More <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="12" height="12"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Column 1: Logo + Description + Social -->
+      <div class="footer-col">
+        <img src="https://evolveenergygroup.com/wp-content/uploads/2024/10/Evolve_Energy-Group_Logo_White-1-min-2.png" alt="Evolve Energy Group" class="footer-logo">
+        <p class="footer-desc">
+          Evolve Energy Group, as the best solar company in India is already leading the way by offering innovative and cost-effective solutions.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12c0 5.99 4.388 10.954 10.125 11.854V15.469H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.5a1 1 0 100 2 1 1 0 000-2z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="https://evolveenergygroup.com/about-us/">About Us</a></li>
+          <li><a href="https://evolveenergygroup.com/projects/">Projects</a></li>
+          <li><a href="https://evolveenergygroup.com/solar-calculator/">Solar Calculator</a></li>
+          <li><a href="https://evolveenergygroup.com/blogs/">Blog</a></li>
+          <li><a href="https://evolveenergygroup.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="https://evolveenergygroup.com/solar-inverter/">Solar Inverter</a></li>
+          <li><a href="https://evolveenergygroup.com/solar-modules/">Solar Modules</a></li>
+          <li><a href="https://evolveenergygroup.com/solar-bos/">Solar BOS</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          371, Sidco Industrial Estate, Ambattur,<br>
+          Chennai, Tamil Nadu 600 098<br><br>
+          <a href="tel:+918001612345">+91 800 16 12345</a><br>
+          <a href="mailto:info@evolveenergygroup.com">info@evolveenergygroup.com</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Copyright Bar -->
+    <div class="footer-bar">
+      &copy; 2026 Evolve Energy Group. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============ BACK TO TOP BUTTON ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="20" height="20"><path d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="https://wa.me/918001612345" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!-- ============================================================
+     JAVASCRIPT — All scripts consolidated at bottom of body
+     ============================================================ -->
+<script>
+/* ====== PRELOADER — Animated percentage counter ====== */
+let preloaderProgress = 0;
+const percentEl = document.getElementById('preloaderPercent');
+const preloaderInterval = setInterval(() => {
+  preloaderProgress += Math.random() * 15;
+  if (preloaderProgress > 100) preloaderProgress = 100;
+  if (percentEl) percentEl.textContent = Math.round(preloaderProgress) + '%';
+  if (preloaderProgress >= 100) clearInterval(preloaderInterval);
+}, 100);
+
+function dismissPreloader() {
+  const p = document.getElementById('preloader');
+  if (p && !p.classList.contains('done')) {
+    preloaderProgress = 100;
+    if (percentEl) percentEl.textContent = '100%';
+    setTimeout(() => p.classList.add('done'), 200);
+  }
+}
+window.addEventListener('load', () => setTimeout(dismissPreloader, 600));
+document.addEventListener('DOMContentLoaded', () => setTimeout(dismissPreloader, 3000));
+setTimeout(dismissPreloader, 4000); /* Safety fallback */
+
+
+/* ====== SCROLL PROGRESS BAR — Updates width on scroll ====== */
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  if (docHeight > 0) {
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById('scrollProgress').style.width = progress + '%';
+  }
+});
+
+
+/* ====== SCROLL REVEAL — IntersectionObserver triggers .vis class ====== */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      en.target.classList.add('vis');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+
+/* ====== NAVBAR — Transparent vs scrolled state ====== */
+const nav = document.getElementById('nav');
+function updateNav() {
+  nav.classList.toggle('nav--top', window.scrollY < 60);
+  nav.classList.toggle('nav--scroll', window.scrollY >= 60);
+}
+updateNav();
+window.addEventListener('scroll', updateNav);
+
+
+/* ====== MOBILE NAV — Open/close hamburger menu ====== */
+document.getElementById('hamburgerBtn').addEventListener('click', () => {
+  document.getElementById('mobNav').classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+document.getElementById('mobCloseBtn').addEventListener('click', () => {
+  document.getElementById('mobNav').classList.remove('open');
+  document.body.style.overflow = '';
+});
+document.querySelectorAll('.mob-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobNav').classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+
+/* ====== CITY SELECTOR — Search & select city cards ====== */
+(function() {
+  const cities = document.querySelectorAll('.city-card');
+  const searchInput = document.getElementById('searchInput');
+
+  if (cities.length && searchInput) {
+    cities.forEach(city => {
+      city.addEventListener('click', () => {
+        document.querySelector('.city-card.active')?.classList.remove('active');
+        city.classList.add('active');
+      });
+    });
+
+    searchInput.addEventListener('input', () => {
+      const value = searchInput.value.toLowerCase();
+      cities.forEach(city => {
+        const name = city.dataset.city;
+        city.style.display = name.includes(value) ? 'flex' : 'none';
+      });
+    });
+  }
+})();
+
+
+/* ====== FAQ — Accordion toggle + tab switching ====== */
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', function() {
+    const item = this.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    /* Close all siblings */
+    item.closest('.faq-group').querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-a').style.maxHeight = null;
+    });
+    /* Open clicked if it was closed */
+    if (!wasOpen) {
+      item.classList.add('open');
+      const answer = item.querySelector('.faq-a');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+
+/* Initialize open FAQ items on page load */
+document.querySelectorAll('.faq-item.open .faq-a').forEach(a => {
+  a.style.maxHeight = a.scrollHeight + 'px';
+});
+
+/* FAQ Tab switching */
+document.querySelectorAll('.faq-tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    const idx = parseInt(this.dataset.tab);
+    document.querySelectorAll('.faq-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
+    document.querySelectorAll('.faq-group').forEach((g, i) => {
+      g.classList.toggle('active', i === idx);
+      /* Re-calculate open items height when tab switches */
+      if (i === idx) {
+        g.querySelectorAll('.faq-item.open .faq-a').forEach(a => {
+          a.style.maxHeight = a.scrollHeight + 'px';
+        });
+      }
+    });
+  });
+});
+
+
+/* ====== SMOOTH SCROLL — For in-page anchor links ====== */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+
+/* ====== COUNTER ANIMATION — Numbers count up on scroll ====== */
+const counterObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const stat = entry.target;
+      const target = parseInt(stat.dataset.target);
+      const counter = stat.querySelector('.counter');
+      if (counter && !stat.classList.contains('counted')) {
+        stat.classList.add('counted');
+        let current = 0;
+        const step = Math.ceil(target / 60);
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          counter.textContent = current;
+        }, 20);
+      }
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.why-stat').forEach(s => counterObs.observe(s));
+
+
+/* ====== CUSTOM CURSOR — Dot + ring follow mouse (desktop only) ====== */
+const cursorDot = document.getElementById('cursorDot');
+const cursorRing = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+/* Only enable custom cursor on non-touch devices */
+if (window.matchMedia('(pointer: fine)').matches) {
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (cursorDot) {
+      cursorDot.style.left = mouseX + 'px';
+      cursorDot.style.top = mouseY + 'px';
+    }
+  });
+
+  function animateRing() {
+    ringX += (mouseX - ringX) * 0.15;
+    ringY += (mouseY - ringY) * 0.15;
+    if (cursorRing) {
+      cursorRing.style.left = ringX + 'px';
+      cursorRing.style.top = ringY + 'px';
+    }
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  /* Cursor grow on interactive elements */
+  document.querySelectorAll('a, button, .tilt-card, .prod-card, .blog-card, .faq-q, .city-card').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      if (cursorRing) cursorRing.classList.add('cursor-grow');
+      if (cursorDot) cursorDot.classList.add('cursor-hide');
+    });
+    el.addEventListener('mouseleave', () => {
+      if (cursorRing) cursorRing.classList.remove('cursor-grow');
+      if (cursorDot) cursorDot.classList.remove('cursor-hide');
+    });
+  });
+}
+
+
+/* ====== TILT CARD — 3D perspective effect on mouse hover ====== */
+document.querySelectorAll('.tilt-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = (y - centerY) / centerY * -6;
+    const rotateY = (x - centerX) / centerX * 6;
+    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02,1.02,1.02)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) scale3d(1,1,1)';
+  });
+});
+
+
+/* ====== MAGNETIC BUTTON — Subtle follow-mouse effect ====== */
+document.querySelectorAll('.magnetic-btn').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+  });
+  btn.addEventListener('mouseleave', () => {
+    btn.style.transform = 'translate(0, 0)';
+  });
+});
+
+
+/* ====== BACK TO TOP — Show/hide button + scroll to top ====== */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('show', window.scrollY > 500);
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+/* ====== PARALLAX — Background images shift on scroll ====== */
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.values-bg-image, .services-bg-image, .journey-bg-image, .why-bg-image, .cta-bg-image').forEach(el => {
+    if (el.parentElement) {
+      const rect = el.parentElement.getBoundingClientRect();
+      const speed = 0.3;
+      el.style.transform = `translateY(${rect.top * speed}px)`;
+    }
+  });
+});
+
+
+/* ====== STAT STRIP — Hover ripple effect ====== */
+document.querySelectorAll('.stat-box').forEach(box => {
+  box.addEventListener('mouseenter', function(e) {
+    const rect = this.getBoundingClientRect();
+    const ripple = document.createElement('div');
+    ripple.classList.add('stat-ripple');
+    ripple.style.left = (e.clientX - rect.left) + 'px';
+    ripple.style.top = (e.clientY - rect.top) + 'px';
+    this.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  });
+});
+</script>
+
+</body>
+</html>
